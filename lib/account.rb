@@ -6,12 +6,12 @@ class Account
     @balance = 0
   end
 
-  def add_credit(balance)
-    @balance += balance
+  def add_credit(credit)
+    @balance += credit
   end
 
-  def withdraw(balance)
-    @balance -= balance  
+  def withdraw(credit)
+    @balance -= credit
   end
 
 
