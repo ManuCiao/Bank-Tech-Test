@@ -10,6 +10,12 @@ describe Account do
     end
   end
 
+  context 'returns credit' do
+    it 'add credit to the balance' do
+      account.add_credit(500)
+      expect(account.balance).to eq 500
+    end
+  end
 
 
 

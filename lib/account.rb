@@ -6,6 +6,10 @@ class Account
     @balance = 0
   end
 
+  def add_credit(balance)
+    @balance += balance
+  end
+
 
 
 end
