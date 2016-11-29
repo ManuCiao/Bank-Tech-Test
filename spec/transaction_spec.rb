@@ -1,7 +1,7 @@
 require 'transaction'
 
 describe Transaction do
-  subject(:transaction) {described_class.new(300, 200, 500)}
+  subject(:transaction) {described_class.new(300, 0, 300)}
 
   context 'return date' do
     it 'should return the date' do
@@ -17,13 +17,13 @@ describe Transaction do
 
   context 'return debit' do
     it 'should return the debit' do
-      expect(transaction.debit).to eq 200
+      expect(transaction.debit).to eq 0
     end
   end
 
   context 'return new balance' do
     it 'should return the new balance' do
-      expect(transaction.balance).to eq 500
+      expect(transaction.balance).to eq 300
     end
   end
 

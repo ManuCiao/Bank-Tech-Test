@@ -9,7 +9,7 @@ class Statement
     @history = history
   end
 
-  def print
+  def print_history
     statement = ""
     @history.reverse.each do |transaction|
       statement << "#{print_date(transaction.date)}".ljust(10) + " || " +  "#{float(transaction.credit)}".ljust(7) + " || " +  "#{float(transaction.debit)}".ljust(7) + " || " + "#{float(transaction.balance)}" +"\n"

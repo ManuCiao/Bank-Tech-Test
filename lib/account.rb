@@ -24,7 +24,7 @@ class Account
 
   def print_statement
     create_statement
-    @statement.print
+    @statement.print_history
   end
 
   private
