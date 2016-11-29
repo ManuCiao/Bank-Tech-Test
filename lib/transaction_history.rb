@@ -12,4 +12,8 @@ class Transaction_history
     @transaction = Transaction.new(credit, deposit, new_balance)
   end
 
+  def save_history(transaction)
+    @history << transaction
+  end
+
 end
