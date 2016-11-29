@@ -17,6 +17,14 @@ describe Account do
     end
   end
 
+  context 'returns withdraw' do
+    it 'remove credit to the balance' do
+      account.add_credit(500)
+      account.withdraw(200)
+      expect(account.balance).to eq 300
+    end
+  end
+
 
 
 end
