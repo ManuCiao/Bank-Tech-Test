@@ -1,12 +1,12 @@
 require 'date'
 
 class Transaction
-    attr_reader :credit, :deposit, :new_balance, :date
+    attr_reader :credit, :debit, :balance, :date
 
-    def initialize(credit, deposit, new_balance)
-        @deposit = deposit
+    def initialize(credit, debit, balance)
+        @debit = debit
         @credit = credit
-        @new_balance = new_balance
+        @balance = balance
         @date = Time.new.strftime("%d/%m/%Y")
     end
 

@@ -15,15 +15,15 @@ describe Transaction do
     end
   end
 
-  context 'return deposit' do
-    it 'should return the deposit' do
-      expect(transaction.deposit).to eq 200
+  context 'return debit' do
+    it 'should return the debit' do
+      expect(transaction.debit).to eq 200
     end
   end
 
   context 'return new balance' do
     it 'should return the new balance' do
-      expect(transaction.new_balance).to eq 500
+      expect(transaction.balance).to eq 500
     end
   end
 

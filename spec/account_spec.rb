@@ -10,6 +10,12 @@ describe Account do
     end
   end
 
+  context 'returns a transaction history' do
+    it 'returns a transaction history' do
+      expect(account.history).to be_an_instance_of(Transaction_history)
+    end
+  end
+
   context 'returns credit' do
     it 'add credit to the balance' do
       account.add_credit(500)
@@ -24,7 +30,5 @@ describe Account do
       expect(account.balance).to eq 300
     end
   end
-
-
 
 end

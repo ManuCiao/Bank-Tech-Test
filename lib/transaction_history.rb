@@ -8,8 +8,8 @@ class Transaction_history
     @history = [];
   end
 
-  def create_history(credit, deposit, new_balance)
-    @transaction = Transaction.new(credit, deposit, new_balance)
+  def create_history(credit, debit, balance)
+    @transaction = Transaction.new(credit, debit, balance)
   end
 
   def save_history(transaction)
