@@ -5,7 +5,7 @@ class Transaction
         @deposit = deposit
         @credit = credit
         @new_balance = new_balance
-        @date = Time.now.strftime("%d/%m/%Y")
+        @date = Time.new.strftime("%d/%m/%Y")
     end
 
 end
